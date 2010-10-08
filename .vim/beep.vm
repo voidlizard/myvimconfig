@@ -1,0 +1,14 @@
+
+syn keyword beepStatement  if else elif while ret 
+syn keyword beepStructure  type def 
+
+syn match   beepComment "#.*$" contains=beepTodo,@Spell
+
+syn keyword beepTodo  TODO FIXME XXX contained
+
+hi def link beepStatement Statement
+hi def link beepStructure Structure
+hi def link beepComment   Comment 
+hi def link beepTodo      Todo 
+
+
